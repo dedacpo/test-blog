@@ -15,4 +15,4 @@ Foi utilizado também SCSS para definição de variáveis de cor secundária.
 Para o carrosel, foi utilizado a biblioteca Slick.
 
 ## Hospedagem
-O App também foi hospedado no GitHub Pages. Acesse https://dedacpo.github.io/teste-ciandt/ para ver.
+O App também foi hospedado no GitHub Pages. Acesse https://dedacpo.github.io/test-blog/ para ver.
