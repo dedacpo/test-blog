@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div id="pre-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+          <p style="color:white;">
+            <i class="fas fa-phone-alt"></i>+ 62 088 999 123</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12" id="social-media">
+          <a href="">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-pinterest-p"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+          <a href="">
+            <i class="fas fa-globe"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo-01.png" />
+        </a>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+        <div id="button">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item" [ngClass]="{'active' : menuActive=='home' ? true : false}" (click)="menuActive = 'home'">
+              <a class="nav-link" routerLink="/">
+                <i *ngIf="menuActive=='home'" class="fas fa-home"></i> Home
+              </a>
+            </li>
+            <li class="nav-item" [ngClass]="{'active' : menuActive=='portfolio' ? true : false}" (click)="menuActive = 'portfolio'">
+              <a class="nav-link" href="#">
+                <i *ngIf="menuActive=='portfolio'" class="fas fa-images"></i> Portfolio
+              </a>
+            </li>
+            <li class="nav-item" [ngClass]="{'active' : menuActive=='blog' ? true : false}" (click)="menuActive = 'blog'">
+              <a class="nav-link" routerLink="/blog">
+                <i *ngIf="menuActive=='blog'" class="fas fa-rss"></i> Blog
+              </a>
+            </li>
+            <li class="nav-item" [ngClass]="{'active' : menuActive=='contact' ? true : false}" (click)="menuActive = 'contact'">
+              <a class="nav-link" href="#">
+                <i *ngIf="menuActive=='contact'" class="fas fa-address-book"></i> Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+</nav>
